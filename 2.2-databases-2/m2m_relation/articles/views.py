@@ -8,6 +8,4 @@ def articles_list(request):
     ordering = '-published_at'
     object_list = Article.objects.all().order_by(ordering).prefetch_related('scopes')
     context = {'object_list': object_list}
-
-
     return render(request, template, context)

@@ -5,6 +5,7 @@ from django.forms import BaseInlineFormSet
 from .models import Article, Scope, ArticleScope
 
 
+
 @admin.register(Scope)
 class ScopeAdmin(admin.ModelAdmin):
     pass
